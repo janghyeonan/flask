@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1f19289-2269-4227-857b-2e0c4da9cb61" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/talk.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/talk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/talk_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/talk_result.html" afterDir="false" />
-    </list>
+    <list default="true" id="c1f19289-2269-4227-857b-2e0c4da9cb61" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
