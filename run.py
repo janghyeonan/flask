@@ -1,8 +1,49 @@
+import sys
+sys.path.append('/Users/janghyeonan/flask')
 from flask import Flask, render_template, request, redirect
+from werkzeug import secure_filename
 import sqlite3
+import os
+import glob
+import random
+import google_speech
 
+UPLOAD_FOLDER = '/Users/janghyeonan/flask/tmp/'
+ALLOWED_EXTENSIONS = set(['wav'])
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
+
+@app.route("/ff", methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        file = request.files['file']
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'sound.wav'))
+            tts = google_speech.st_change('/Users/janghyeonan/flask/tmp/sound.wav')
+            return render_template('talk_result.html', ff = tts)
+    return """
+    <!doctype html>
+    <form action="" method=post enctype=multipart/form-data>
+    <center><h1>억양에 따른 감정 평가</h1></center>
+    <center>위에 표시된 내용을 감정을 섞어 얘기해주세요</center>
+    <center>
+    <table>
+    <tr>
+    <td><img src='../static/img/%s.jpg' height ='400px' width='300px' /></td>
+    </tr>
+    </table>
+    </center>
+    <center>
+    <p><input type=file name=file>
+    <input type=submit value=Upload>
+    </center>
+    </form>
+    """ % "<br>".join(str(random.randint(1,3)))
 
 @app.route("/")
 def run():
@@ -102,7 +143,7 @@ def report():
 def talk():
     if request.method == 'POST':
         return render_template('talk_result.html')
-    return render_template('talk.html')
+    return render_template('talk.html', img ="../static/img/"+str(random.randint(1,3))+".jpg" )
 
 @app.route('/talk_result', methods=['POST', 'GET'])
 def talk_result():
@@ -110,4 +151,14 @@ def talk_result():
         return render_template('index.html')
     return render_template('talk_result.html')
 
-app.run(host='0.0.0.0', port=8787, debug=True)
+@app.route('/index2', methods=['POST', 'GET'])
+def index2():
+    if request.method == 'POST':
+        return render_template('index.html')
+    return render_template('index2.html')
+
+@app.route('/audio', methods=['POST', 'GET'])
+def audio():
+    return render_template('record-live-audio.html')
+
+app.run(host='localhost', port=8787, debug=True)
