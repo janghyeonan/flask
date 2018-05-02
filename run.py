@@ -7,6 +7,7 @@ import os
 import glob
 import random
 import google_speech
+import emotionPre
 
 UPLOAD_FOLDER = '/Users/janghyeonan/flask/tmp/'
 ALLOWED_EXTENSIONS = set(['wav'])
@@ -17,6 +18,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
+
 @app.route("/ff", methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -24,8 +26,9 @@ def index():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'sound.wav'))
-            tts = google_speech.st_change('/Users/janghyeonan/flask/tmp/sound.wav')
-            return render_template('talk_result.html', ff = tts)
+            tts = google_speech.st_change('/Users/janghyeonan/flask/tmp/sound.wav') #음성인식
+            emo = emotionPre.main()#감정분
+            return render_template('talk_result.html', ff = tts, gg = emo)
     return """
     <!doctype html>
     <form action="" method=post enctype=multipart/form-data>
@@ -161,4 +164,4 @@ def index2():
 def audio():
     return render_template('record-live-audio.html')
 
-app.run(host='localhost', port=8787, debug=True)
+app.run(host='0.0.0.0', port=8787, debug=True)
