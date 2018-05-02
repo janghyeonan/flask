@@ -79,5 +79,9 @@ def st_change(url):
     return text[0]
 
 if __name__=='__main__':
-    st_change2('/Users/janghyeonan/pj2/wav') # 음악 파일 경로를 적어준다.
-    st_change('/Users/janghyeonan/flask/tmp/sound.wav') #한개의 파일
+    #st_change2('/Users/janghyeonan/pj2/wav') # 음악 파일 경로를 적어준다.
+    #st_change('/Users/janghyeonan/flask/tmp/sound.wav') #한개의 파일
+    st_change('/Users/janghyeonan/Downloads/1.wav')  # 한개의 파일
+
+    hz_search('/Users/janghyeonan/Downloads/2.wav')
+    s_t('/Users/janghyeonan/Downloads/2.wav', 16000)

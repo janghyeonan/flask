@@ -6,6 +6,7 @@ import sqlite3
 import os
 import glob
 import random
+
 import google_speech
 import emotionPre
 
@@ -26,8 +27,10 @@ def index():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'sound.wav'))
+
             tts = google_speech.st_change('/Users/janghyeonan/flask/tmp/sound.wav') #음성인식
-            emo = emotionPre.main()#감정분
+            emo = emotionPre.main()#감정분석
+
             return render_template('talk_result.html', ff = tts, gg = emo)
     return """
     <!doctype html>
@@ -47,6 +50,12 @@ def index():
     </center>
     </form>
     """ % "<br>".join(str(random.randint(1,3)))
+
+@app.route('/talk_result', methods=['POST', 'GET'])
+def talk_result():
+    if request.method == 'POST':
+        return render_template('index.html')
+    return render_template('talk_result.html', dd ='11')
 
 @app.route("/")
 def run():
@@ -148,11 +157,6 @@ def talk():
         return render_template('talk_result.html')
     return render_template('talk.html', img ="../static/img/"+str(random.randint(1,3))+".jpg" )
 
-@app.route('/talk_result', methods=['POST', 'GET'])
-def talk_result():
-    if request.method == 'POST':
-        return render_template('index.html')
-    return render_template('talk_result.html')
 
 @app.route('/index2', methods=['POST', 'GET'])
 def index2():
