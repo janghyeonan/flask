@@ -17,7 +17,7 @@ from pydub import AudioSegment
 #구글 음성인식 함수, 변환된 내용을 리턴해줌
 def s_t(fname, hhz):
     #구글인증파일 json위치 넣기
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] ='C:/inetpub/flask2/TTT-T-a09249acfa84.json'
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] ='******************.json' #구글 api키로 받은 json파일 경로와 파일명 써주기
     client = speech.SpeechClient()
     file_name = fname
     with io.open(file_name, 'rb') as audio_file:
@@ -79,9 +79,9 @@ def st_change(url):
     return text[0]
 
 if __name__=='__main__':
-    #st_change2('/Users/janghyeonan/pj2/wav') # 음악 파일 경로를 적어준다.
-    #st_change('/Users/janghyeonan/flask/tmp/sound.wav') #한개의 파일
-    st_change('/Users/janghyeonan/Downloads/1.wav')  # 한개의 파일
+    #st_change2('c:/pj2/wav') # 음악 파일 경로를 적어준다.
+    #st_change('c:/tmp/sound.wav') #한개의 파일
+    st_change('c:/1.wav')  # 한개의 파일
 
-    hz_search('/Users/janghyeonan/Downloads/2.wav')
-    s_t('/Users/janghyeonan/Downloads/2.wav', 16000)
+    hz_search('c:/Downloads/2.wav')
+    s_t('c:/2.wav', 16000)

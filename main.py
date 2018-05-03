@@ -63,4 +63,3 @@ def models():
 
 if __name__ == '__main__':    
         print('감정결과 :', models())
-#마무

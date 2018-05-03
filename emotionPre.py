@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#텐서 플로우를 이용한 모델이었으나, 이번 프로젝트에서는 사용되지 않았다.
 import librosa
 import numpy as np
 import tensorflow as tf

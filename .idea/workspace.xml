@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1f19289-2269-4227-857b-2e0c4da9cb61" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/emotionPre.py" beforeDir="false" afterPath="$PROJECT_DIR$/emotionPre.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google_speech.py" beforeDir="false" afterPath="$PROJECT_DIR$/google_speech.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/audiodisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/recorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/recorderWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/recorderjs/recorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/recorderjs/recorderWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/talk.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/talk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/talk_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/talk_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/windows/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/static/js/audiodisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/static/js/recorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/static/js/recorderWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/static/js/recorderjs/recorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/static/js/recorderjs/recorderWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/windows/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/templates/talk.html" beforeDir="false" afterPath="$PROJECT_DIR$/windows/templates/talk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/templates/talk_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/windows/templates/talk_result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/google_speech.py" beforeDir="false" afterPath="$PROJECT_DIR$/windows/google_speech.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +20,8 @@
       <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="705">
+              <caret line="78" column="47" lean-forward="true" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -61,22 +46,23 @@
         <option value="$PROJECT_DIR$/static/js/recorderjs/recorder.js" />
         <option value="$PROJECT_DIR$/static/js/recorder.js" />
         <option value="$PROJECT_DIR$/templates/index2.html" />
-        <option value="$PROJECT_DIR$/google_speech.py" />
         <option value="$PROJECT_DIR$/templates/end.html" />
         <option value="$PROJECT_DIR$/templates/main.css" />
         <option value="$PROJECT_DIR$/templates/main.js" />
         <option value="$PROJECT_DIR$/mlpcPre.py" />
         <option value="$PROJECT_DIR$/emotion.py" />
-        <option value="$PROJECT_DIR$/emotionPre.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/talk.html" />
         <option value="$PROJECT_DIR$/templates/talk_result.html" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/windows/run.py" />
         <option value="$PROJECT_DIR$/windows/templates/talk_result.html" />
         <option value="$PROJECT_DIR$/windows/templates/talk.html" />
         <option value="$PROJECT_DIR$/windows/templates/index.html" />
+        <option value="$PROJECT_DIR$/emotionPre.py" />
+        <option value="$PROJECT_DIR$/google_speech.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/windows/google_speech.py" />
       </list>
     </option>
   </component>
@@ -210,7 +196,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17767654" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2881549" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14692482" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32915717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -249,20 +235,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/talk_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -275,6 +247,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -311,6 +286,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -354,6 +332,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -448,37 +429,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.css" />
     <entry file="file://$PROJECT_DIR$/templates/main.js" />
-    <entry file="file://$PROJECT_DIR$/google_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index2.html" />
     <entry file="file://$PROJECT_DIR$/templates/end.html" />
     <entry file="file://$PROJECT_DIR$/mlpcPre.py" />
     <entry file="file://$PROJECT_DIR$/emotion.py" />
-    <entry file="file://$PROJECT_DIR$/emotionPre.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/windows/main.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1281">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-          <folding>
-            <element signature="e#47#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -497,13 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/windows/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -528,10 +475,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/emotionPre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google_speech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="85" column="52" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
+          <folding>
+            <element signature="e#113#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/windows/emotionPre.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/windows/google_speech.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1806">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+          <folding>
+            <element signature="e#113#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/windows/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/windows/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="705">
+          <caret line="78" column="47" lean-forward="true" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="47" />
         </state>
       </provider>
     </entry>

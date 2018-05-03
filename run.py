@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Users/janghyeonan/flask')
+sys.path.append('/Users/janghyeonan/flask') #다른 클래스 파일들을 불러오기 위한 경로 설정
 from flask import Flask, render_template, request, redirect
 from werkzeug import secure_filename
 import os
@@ -66,10 +66,12 @@ def talk_result():
 def run():
     return render_template("index.html")
 
+#예외 처리 구문 400에러
 @app.errorhandler(400)
 def uncaughtError(error):
     return """<script>alert('파일을 넣어주세요.');location.href='/analysis';</script>"""
 
+#에러 처리 구문 500에러
 @app.errorhandler(500)
 def uncaughtError(error):
     return """<script>alert('업로드한 파일이 이상합니다. 다른 파일을 넣어주세요.');location.href='/analysis';</script>"""
