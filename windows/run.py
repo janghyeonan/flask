@@ -41,7 +41,7 @@ def index():
     <a href="/">메인화면으로 이동</a>
     <form action="" method=post enctype=multipart/form-data>
     <br />
-    <center><h1>✮억양에 따른 감정 분석✮</h1></center>
+    <center><h1>✮음성분석을 통한 감정분류✮</h1></center>
     <center><h3>아래 사진을 보고, 말한 내용을 파일로 저장하여 업로드 해주세요. 감정이 나옵니다.</h3></center>
     <center>
     <table>
@@ -53,7 +53,7 @@ def index():
     <center><font size ='5pt'> WAV 파일생성은 여기서 ->  <a href='https://vocaroo.com' target="_blank">클릭</a></font></center>
     <center><br/>
     <p><input type=file name=file>
-    <input type=submit value=업로드>    <font color ='red' size='2pt'>(파일 없이 누르면 에러나요!)</font>
+    <input type=submit value=업로드>
     </center>
     </form>
     """ % "<br>".join(str(random.randint(1,8)))
