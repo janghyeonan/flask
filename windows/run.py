@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Users/janghyeonan/flask')
+sys.path.append('C:/inetpub/flask2')
 from flask import Flask, render_template, request, redirect
 from werkzeug import secure_filename
 import os

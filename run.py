@@ -73,4 +73,5 @@ def uncaughtError(error):
 @app.errorhandler(500)
 def uncaughtError(error):
     return """<script>alert('업로드한 파일이 이상합니다. 다른 파일을 넣어주세요.');location.href='/analysis';</script>"""
+
 app.run(host='0.0.0.0', port=8787, debug=False)
