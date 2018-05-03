@@ -59,7 +59,7 @@ def models():
             res = "기쁨"
         elif i == 3:
             res = "화남"
-    return res
+    return res,acc1
 
 if __name__ == '__main__':    
         print('감정결과 :', models())

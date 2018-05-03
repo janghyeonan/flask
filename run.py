@@ -29,28 +29,29 @@ def index():
             if tts =='음':
                 tts = '인식이 잘 되지 않았네요.'
             #emo = emotionPre.main()#감정분석 #이전꺼
-            emo = '{'+main.models()+'}'#감정분석
-            return render_template('talk_result.html', ff = tts, gg = emo)
+            emo, acc = main.models()#감정분석
+            acc = '(' +str(acc*100)[0:4] + '%)'
+            return render_template('talk_result.html', ff = tts, gg = emo, zz = acc)
 
     return """
     <!doctype html>
     <style type="text/css">
     a { text-decoration:none }
     </style>
-    <a href="/">첫화면</a>
+    <a href="/">메인화면으로 이동</a>
     <form action="" method=post enctype=multipart/form-data>
     <br />
     <center><h1>✮억양에 따른 감정 분석✮</h1></center>
-    <center><h2>아래 사진을 보고, 감정적으로 한마디 해주세요.</h2></center>
+    <center><h3>아래 사진을 보고, 말한 내용을 파일로 저장하여 업로드 해주세요. 감정이 나옵니다.</h3></center>
     <center>
     <table>
     <tr>
-    <td><img src='../static/img/%s.PNG' height ='600px' width='500px' /></td>
+    <td><img src='../static/img/%s.PNG' height ='400px' width='300px' /></td>
     </tr>
     </table>
     </center>
-    <center>- wav 파일생성은 여기서 <a href='https://vocaroo.com' target="_blank">클릭</a></center>
-    <center>
+    <center><font size ='5pt'> WAV 파일생성은 여기서 ->  <a href='https://vocaroo.com' target="_blank">클릭</a></font></center>
+    <center><br/>
     <p><input type=file name=file>
     <input type=submit value=업로드>    <font color ='red' size='2pt'>(파일 없이 누르면 에러나요!)</font>
     </center>
@@ -59,10 +60,17 @@ def index():
 
 @app.route('/talk_result', methods=['POST', 'GET'])
 def talk_result():
-    return render_template('talk_result.html', dd = 'dd')
+    return render_template('talk_result.html')
 
 @app.route("/")
 def run():
     return render_template("index.html")
 
-app.run(host='0.0.0.0', port=8787, debug=True)
+@app.errorhandler(400)
+def uncaughtError(error):
+    return """<script>alert('파일을 넣어주세요.');location.href='/analysis';</script>"""
+
+@app.errorhandler(500)
+def uncaughtError(error):
+    return """<script>alert('업로드한 파일이 이상합니다. 다른 파일을 넣어주세요.');location.href='/analysis';</script>"""
+app.run(host='0.0.0.0', port=8787, debug=False)
